@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RotatedLogo extends StatefulWidget {
   @override
@@ -33,8 +34,8 @@ class rotatedLogoState extends State<RotatedLogo>
         leading: const Icon(Icons.arrow_back),
         leadingWidth: 5,
         title: Center(child: const Text("Third Screen ")),
-        titleTextStyle: const TextStyle(
-            color: Colors.black54, fontSize: 22, fontWeight: FontWeight.w400),
+        titleTextStyle:  TextStyle(
+            color: Colors.black54, fontSize: 22.sp, fontWeight: FontWeight.w400),
       ),
       body: Center(
         child: AnimatedBuilder(
@@ -45,8 +46,8 @@ class rotatedLogoState extends State<RotatedLogo>
           },
           child: Image.network(
             "https://www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2022/09/had_technology_3rd_icn_4.png",
-            width: 300,
-            height: 200,
+            width: 300.w,
+            height: 200.h,
           ),
         ),
       ),

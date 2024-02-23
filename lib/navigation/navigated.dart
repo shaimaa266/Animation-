@@ -1,5 +1,6 @@
 import 'package:animation/navigation/second%20page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class NavigatedPages extends StatelessWidget {
   const NavigatedPages({super.key});
@@ -14,8 +15,8 @@ class NavigatedPages extends StatelessWidget {
           Center(
             child: Image.network(
               "https://www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2022/09/had_technology_3rd_icn_4.png",
-              width: 300,
-              height: 200,
+              width: 300.w,
+              height: 200.h,
             ),
           ),
           TextButton(
@@ -39,9 +40,9 @@ class NavigatedPages extends StatelessWidget {
                       pageBuilder: (context, animation, secondaryAnimation) =>
                           const  SecondScreen()));
             },
-            child: const Text(
+            child:  Text(
               "Move to Second Screen",
-              style: TextStyle(color: Colors.indigo, fontSize: 25),
+              style: TextStyle(color: Colors.indigo, fontSize: 25.sp),
             ),
           )
         ],
